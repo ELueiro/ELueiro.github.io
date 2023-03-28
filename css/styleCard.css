@@ -1,0 +1,87 @@
+.portfolio {
+  background: var(--bg-color);
+  min-height: auto;
+  padding-bottom: 10rem;
+}
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+.portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+.portfolio .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  border-radius: 15px;
+  border: solid 0.4rem #2e4f4f;
+  margin: 30px;
+}
+.portfolio .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2e4f4f;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.portfolio .card .box .content {
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.portfolio .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.04);
+  transition: 0.5s;
+}
+.portfolio .card .box .content h3 {
+  font-size: 3rem;
+  color: #0e8388;
+  z-index: 1;
+  transition: 0.4s;
+}
+.portfolio .card .box .content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #cbe4de;
+  z-index: 1;
+  transition: 0.4s;
+}
+.portfolio .card .box .content a {
+  width: 100px;
+  margin: 1rem;
+  color: #cbe4de;
+}
+.portfolio .card:hover .box {
+  transform: translateY(-50px);
+  transition: 0.5s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #2e4f4f, #2c3333);
+}
+.portfolio .card:hover .box .content h2 {
+  color: rgba(0, 0, 0, 0.1);
+}
+.portfolio .card:hover .box .content h3 {
+  color: #cbe4de;
+}
+
+@mediaand (max-width: $breakpoint-large) {
+  body {
+    font-size: 18px;
+    color: #444;
+    background-color: #eee;
+  }
+}/*# sourceMappingURL=styleCard.css.map */
