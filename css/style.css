@@ -390,6 +390,8 @@ span {
 
 .footer-text p {
   font-size: 1.6rem;
+  text-align: center;
+  color: var(--text-color);
 }
 
 .footer-iconTop a {
