@@ -65,12 +65,4 @@
 }
 .portfolio .card:hover .box .content h3 {
   color: #cbe4de;
-}
-
-@media (max-width: 2200px) {
-  body {
-    font-size: 18px;
-    color: #444;
-    background-color: #eee;
-  }
 }/*# sourceMappingURL=styleCard.css.map */
