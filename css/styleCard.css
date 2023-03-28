@@ -1,16 +1,5 @@
-.portfolio {
-  background: var(--bg-color);
-  min-height: auto;
-  padding-bottom: 10rem;
-}
 .portfolio h2 {
   margin-bottom: 4rem;
-}
-.portfolio .portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-  gap: 2.5rem;
 }
 .portfolio .card {
   position: relative;
@@ -78,7 +67,7 @@
   color: #cbe4de;
 }
 
-@mediaand (max-width: $breakpoint-large) {
+@media (max-width: 2200px) {
   body {
     font-size: 18px;
     color: #444;

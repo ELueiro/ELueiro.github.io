@@ -12,11 +12,11 @@
 }
 
 :root {
-    --bg-color: #2C3333;
-    --second-bg-color: #2E4F4F;
-    --text-color: #CBE4DE;
-    --main-color: #0E8388;
-  }
+  --bg-color: #2c3333;
+  --second-bg-color: #2e4f4f;
+  --text-color: #cbe4de;
+  --main-color: #0e8388;
+}
 
 *::selection {
   background: var(--main-color);
@@ -26,13 +26,11 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  
 }
 
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  
 }
 
 section {
@@ -93,11 +91,9 @@ section {
   margin-left: 3rem;
   animation: floatImage 4s ease-in-out infinite;
   border-radius: 50%; /* establece la imagen como redonda */
-  border: .4rem solid var(--main-color); /* establece un borde negro de 2 píxeles */
-  
+  border: 0.4rem solid var(--main-color); /* establece un borde negro de 2 píxeles */
+
   box-shadow: 0 20px 30px var(--main-color); /* agrega una sombra tecnológica a la imagen */
- 
-  
 }
 
 @keyframes floatImage {
@@ -188,8 +184,6 @@ span {
   width: 20vw;
   border-radius: 50%; /* establece la imagen como redonda */
   border: 6px solid var(--main-color); /* establece un borde negro de 2 píxeles */
-  
-  
 }
 
 .heading {
@@ -270,7 +264,7 @@ span {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
@@ -418,9 +412,22 @@ span {
 }
 
 /* BREAKPOINTS */
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
+
+@media (max-width: 1800px) {
+  .portfolio-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1518px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -435,12 +442,6 @@ span {
 
   .footer {
     padding: 2rem 3%;
-  }
-}
-
-@media (max-width: 879px) {
-  .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -474,7 +475,6 @@ span {
   .home {
     flex-direction: column;
   }
-  
 
   .home-content h3 {
     font-size: 2.6rem;
@@ -496,12 +496,6 @@ span {
   .about img {
     width: 70vw;
     margin-top: 4rem;
-  }
-}
-
-@media (max-width: 580px) {
-  .portfolio-container {
-    grid-template-columns: 1fr;
   }
 }
 
